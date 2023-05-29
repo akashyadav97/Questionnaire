@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Result</title>
+</head>
+<body>
+    <h1>Quiz Result</h1>
+    <p>Hello, {{ name }}, welcome to Quiz night!</p>
+    <p>Your total score is {{ score }} out of 10.</p>
+
+    {% if score <= 2 %}
+        <p>You need to improve.</p>
+    {% elif score < 4 %}
+        <p>You are good.</p>
+    {% else %}
+        <p>You are great.</p>
+    {% endif %}
+
+    <p>Thank you for playing, {{ name }}, goodbye!</p>
+</body>
+</html>
